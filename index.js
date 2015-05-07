@@ -19,7 +19,7 @@ var getPlatformIcons = function() {
     platforms.push({
         name: 'ios',
         isAdded: true,
-        iconsPath: 'res/icons/ios/',
+        iconsPath: 'Resources/icons',
         icons: [
             // App Store
             {
@@ -92,44 +92,29 @@ var getPlatformIcons = function() {
 
     platforms.push({
         name: 'android',
-        iconsPath: 'res/icons/android/',
+        iconsPath: 'res/',
         isAdded: true,
         icons: [{
-            name: 'icon-ldpi.png',
+            name: 'drawable-ldpi/ic_launcher.png',
             size: 36
         }, {
-            name: 'icon-mdpi.png',
+            name: 'drawable-mdpi/ic_launcher.png',
             size: 48
         }, {
-            name: 'icon-hdpi.png',
+            name: 'drawable-hdpi/ic_launcher.png',
             size: 72
         }, {
-            name: 'icon-xhdpi.png',
+            name: 'drawable-xhdpi/ic_launcher.png',
             size: 96
         }, {
-            name: 'icon-xxhdpi.png',
+            name: 'drawable-xxhdpi/ic_launcher.png',
             size: 144
         }, {
-            name: 'icon-xxxhdpi.png',
+            name: 'drawable-xxxhdpi/ic_launcher.png',
             size: 192
         }]
     });
 
-    platforms.push({
-        name: 'wp8',
-        iconsPath: 'res/icons/wp8/',
-        isAdded: true,
-        icons: [{
-                name: 'ApplicationIcon.png',
-                size: 99
-            }, // Icon
-            {
-                name: 'Background.png',
-                size: 159
-            } // Tile Icon
-        ]
-    });
-    // TODO: add all platforms
     deferred.resolve(platforms);
     return deferred.promise;
 };
@@ -146,7 +131,7 @@ var getPlatformSplashs = function() {
     platforms.push({
         name: 'ios',
         isAdded: true,
-        splashPath: 'res/splash/ios/',
+        splashPath: 'Resources/splash',
         splash: [{
                 name: 'Default.png',
                 width: 320,
@@ -199,6 +184,8 @@ var getPlatformSplashs = function() {
             } // iPad Retina
         ]
     });
+
+/*
     platforms.push({
         name: 'android',
         isAdded: true,
@@ -237,18 +224,7 @@ var getPlatformSplashs = function() {
             height: 720
         }]
     });
-
-    platforms.push({
-        name: 'wp8',
-        isAdded: true,
-        splashPath: 'res/splash/wp8/',
-        splash: [{
-            name: 'SplashScreenImage.jpg',
-            width: 480,
-            height: 800
-        }]
-    });
-
+*/
     deferred.resolve(platforms);
     return deferred.promise;
 };
