@@ -196,7 +196,22 @@ var getPlatformSplashs = function() {
                 name: 'Default-667h.png',
                 width: 750,
                 height: 1334
-            }, // iPhone6 ?       
+            }, // iPhone6 ?  
+            {
+                name: 'Default~iphone.png',
+                width: 320,
+                height: 480
+            }, // iPhone                
+            {
+                name: 'Default@2x~iphone.png',
+                width: 640,
+                height: 960
+            }, // iPhone     
+            {
+                name: 'Default-568h@2x~iphone.png',
+                width: 640,
+                height: 1136
+            }, // iPhone                
             {
                 name: 'Default-Landscape@2x~ipad.png',
                 width: 2048,
