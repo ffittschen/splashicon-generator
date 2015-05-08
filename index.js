@@ -181,7 +181,22 @@ var getPlatformSplashs = function() {
                 name: 'Default-Landscape@2x.png',
                 width: 2048,
                 height: 1536
-            } // iPad Retina
+            }, // iPad Retina
+            {
+                name: 'Default-736h.png',
+                width: 1242,
+                height: 2208
+            }, // iPhone6 ?
+            {
+                name: 'Default-Landscape-736h.png',
+                width: 2208,
+                height: 1242
+            }, // iPhone6 ? 
+            {
+                name: 'Default-667h.png',
+                width: 750,
+                height: 1334
+            }, // iPhone6 ?            
         ]
     });
 
