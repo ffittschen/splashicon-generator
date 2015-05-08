@@ -201,7 +201,12 @@ var getPlatformSplashs = function() {
                 name: 'Default-Landscape@2x~ipad.png',
                 width: 2048,
                 height: 1536
-            }, // iPad     
+            }, // iPad 
+            {
+                name: 'Default-Portrait@2x~ipad.png',
+                width: 1536,
+                height: 2048
+            }, // iPad             
             {
                 name: 'Default-Landscape~ipad.png',
                 width: 1024,
